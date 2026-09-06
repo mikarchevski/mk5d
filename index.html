@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mk5d.ru — Домашний сервер</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .container { text-align: center; padding: 2rem; }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: #8892b0; margin-bottom: 3rem; font-size: 1.1rem; }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #3a7bd5;
+            box-shadow: 0 10px 40px rgba(58, 123, 213, 0.3);
+        }
+        .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .card-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .card-desc { color: #8892b0; font-size: 0.9rem; }
+        footer {
+            margin-top: 3rem;
+            color: #555;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>mk5d.ru</h1>
+        <p class="subtitle">Домашний сервер · Все сервисы в одном месте</p>
+        
+        <div class="cards">
+            <a href="https://disk.mk5d.ru" class="card">
+                <div class="card-icon"></div>
+                <div class="card-title">Облачный диск</div>
+                <div class="card-desc">Filebrowser — файлы, загрузка, скачивание</div>
+            </a>
+            
+            <a href="https://disk.mk5d.ru/upload" class="card">
+                <div class="card-icon"></div>
+                <div class="card-title">Загрузчик</div>
+                <div class="card-desc">Flask-приложение для загрузки файлов</div>
+            </a>
+            
+            <!-- Добавьте сюда новые сервисы по мере появления -->
+            <!--
+            <a href="https://app.mk5d.ru" class="card">
+                <div class="card-icon">🚀</div>
+                <div class="card-title">Приложение</div>
+                <div class="card-desc">Основное Flask-приложение</div>
+            </a>
+            -->
+        </div>
+        
+        <footer>
+            <p>Powered by Caddy · Self-hosted</p>
+        </footer>
+    </div>
+</body>
+</html>
