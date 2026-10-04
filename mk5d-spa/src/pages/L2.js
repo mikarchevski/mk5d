@@ -1,85 +1,85 @@
 // Динамический импорт стилей: Vite загрузит l2.css только при открытии этой страницы
-import '../assets/l2.css';
+// import '../assets/l2.css';
 
 export function renderL2() {
     return `
     <div class="page-l2">
         <!-- Шапка -->
-        <header class="header">
-            <div class="header__container">
-                <button class="header__menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <l2-header class="l2-header">
+            <div class="l2-header__container">
+                <l2-button class="l2-header__menu-toggle" type="l2-button" aria-label="Открыть меню" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </button>
-                <a href="#/" class="header__logo-link" data-link>
-                    <img class="header__logo" src="/img/L2img/logo-gamepad.png" alt="Логотип">
+                </l2-button>
+                <a href="#/" class="l2-header__logo-link" data-link>
+                    <img class="l2-header__logo" src="/img/L2img/logo-gamepad.png" alt="Логотип">
                 </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#hero" class="header__nav-link">Главная</a>
+                <nav class="l2-header__nav">
+                    <ul class="l2-header__nav-list">
+                        <li class="l2-header__nav-item">
+                            <a href="#l2-hero" class="l2-header__nav-link">Главная</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a href="#about" class="header__nav-link">О компании</a>
+                        <li class="l2-header__nav-item">
+                            <a href="#l2-about" class="l2-header__nav-link">О компании</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a href="#services" class="header__nav-link">Услуги</a>
+                        <li class="l2-header__nav-item">
+                            <a href="#l2-services" class="l2-header__nav-link">Услуги</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a href="#features" class="header__nav-link">Преимущества</a>
+                        <li class="l2-header__nav-item">
+                            <a href="#features" class="l2-header__nav-link">Преимущества</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a href="#contacts" class="header__nav-link">Контакты</a>
+                        <li class="l2-header__nav-item">
+                            <a href="#l2-contacts" class="l2-header__nav-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </header>
+        </l2-header>
 
-        <!-- Hero секция -->
-        <section class="hero" id="hero">
-            <div class="hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Сайт компьютерной онлайн-игры</h1>
-                    <p class="hero__description">
+        <!-- l2-Hero секция -->
+        <section class="l2-hero" id="l2-hero">
+            <div class="l2-hero__container">
+                <div class="l2-hero__content">
+                    <h1 class="l2-hero__title">Сайт компьютерной онлайн-игры</h1>
+                    <p class="l2-hero__description">
                         Наша студия создаст для вас идеальный экшен. Мы с радостью предложим захватывающий тактический шутер на современном движке или отточенный хардкорный экшен для истинных ценителей жанра.
                     </p>
-                    <a href="#services" class="hero__button button button--primary" data-link>Подробнее</a>
+                    <a href="#l2-services" class="l2-hero__button l2-button l2-button--primary" data-link>Подробнее</a>
                 </div>
-                <div class="hero__image-wrapper">
-                    <img class="hero__image" src="/img/L2img/hero-game.jpg" alt="Игровой скриншот">
+                <div class="l2-hero__image-wrapper">
+                    <img class="l2-hero__image" src="/img/L2img/l2-hero-game.jpg" alt="Игровой скриншот">
                 </div>
             </div>
         </section>
 
         <!-- О компании -->
-        <section class="about" id="about">
-            <div class="about__container">
-                <div class="about__images">
-                    <div class="about__image-wrapper about__image-wrapper--large">
-                        <img class="about__image" src="/img/L2img/about-team.jpg" alt="Команда разработчиков">
+        <section class="l2-about" id="l2-about">
+            <div class="l2-about__container">
+                <div class="l2-about__images">
+                    <div class="l2-about__image-wrapper l2-about__image-wrapper--large">
+                        <img class="l2-about__image" src="/img/L2img/l2-about-team.jpg" alt="Команда разработчиков">
                     </div>
-                    <div class="about__image-wrapper about__image-wrapper--small">
-                        <img class="about__image" src="/img/L2img/about-gamepad.jpg" alt="Геймпад">
+                    <div class="l2-about__image-wrapper l2-about__image-wrapper--small">
+                        <img class="l2-about__image" src="/img/L2img/l2-about-gamepad.jpg" alt="Геймпад">
                     </div>
-                    <div class="about__image-wrapper about__image-wrapper--small">
-                        <img class="about__image" src="/img/L2img/about-gamer.jpg" alt="Игрок">
+                    <div class="l2-about__image-wrapper l2-about__image-wrapper--small">
+                        <img class="l2-about__image" src="/img/L2img/l2-about-gamer.jpg" alt="Игрок">
                     </div>
                 </div>
-                <div class="about__content">
-                    <h2 class="about__title">О компании</h2>
-                    <p class="about__text">
+                <div class="l2-about__content">
+                    <h2 class="l2-about__title">О компании</h2>
+                    <p class="l2-about__text">
                         Мы — команда увлечённых разработчиков, объединённых одной идеей: создать шутер, в который нам самим захочется играть годами.
                     </p>
-                    <p class="about__text">
+                    <p class="l2-about__text">
                         Наша философия проста: игрок и его опыт — всегда на первом месте. Мы не гонимся за сиюминутными трендами, а строим прочный фундамент — отзывчивый, честный геймплей, глубокую тактическую составляющую и технологическую базу, которая не подведёт в самый ответственный момент. Мы верим, что настоящая игра рождается в диалоге с комьюнити, поэтому открытость, поддержка и совместное развитие — наши ключевые принципы с самого первого дня.
                     </p>
-                    <p class="about__text">
+                    <p class="l2-about__text">
                         Это наш первый крупный проект как независимой команды. Для нас это не просто «ещё один шутер» — это заявление о том, каким, по нашему мнению, должен быть современный экшен.
                     </p>
                 </div>
-                <div class="about__accent"></div>
+                <div class="l2-about__accent"></div>
             </div>
         </section>
 
@@ -132,10 +132,10 @@ export function renderL2() {
         </section>
 
         <!-- Наши услуги -->
-        <section class="services" id="services">
-            <div class="services__container">
-                <h2 class="services__title">Наши услуги</h2>
-                <div class="services__list">
+        <section class="l2-services" id="l2-services">
+            <div class="l2-services__container">
+                <h2 class="l2-services__title">Наши услуги</h2>
+                <div class="l2-services__list">
                     <article class="service-card">
                         <div class="service-card__image-wrapper">
                             <img class="service-card__image" src="/img/L2img/service-restore.jpg" alt="Восстановление аккаунта">
@@ -144,7 +144,7 @@ export function renderL2() {
                             <h3 class="service-card__title">Восстановление аккаунта и предметов</h3>
                             <p class="service-card__text">Услуга по расследованию и восстановлению доступа к аккаунту или утраченных внутриигровых предметов в случае взлома или технического сбоя.</p>
                             <p class="service-card__price">От 4 790 руб.</p>
-                            <a href="#contacts" class="service-card__button button button--outline" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-card__button l2-button l2-button--outline" data-link>Заказать</a>
                         </div>
                     </article>
                     <article class="service-card service-card--reverse">
@@ -155,7 +155,7 @@ export function renderL2() {
                             <h3 class="service-card__title">Приоритетная очередь в технической поддержке</h3>
                             <p class="service-card__text">Гарантированный приоритет при рассмотрении ваших запросов в службу поддержки по любым техническим или игровым вопросам.</p>
                             <p class="service-card__price">От 7 400 руб.</p>
-                            <a href="#contacts" class="service-card__button button button--outline" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-card__button l2-button l2-button--outline" data-link>Заказать</a>
                         </div>
                     </article>
                     <article class="service-card">
@@ -166,7 +166,7 @@ export function renderL2() {
                             <h3 class="service-card__title">Проведение приватного турнира</h3>
                             <p class="service-card__text">Организация и администрирование компанией приватного турнира для вашего клана или сообщества с настройкой правил, призами и таблицей результатов.</p>
                             <p class="service-card__price">От 2 750 руб.</p>
-                            <a href="#contacts" class="service-card__button button button--outline" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-card__button l2-button l2-button--outline" data-link>Заказать</a>
                         </div>
                     </article>
                 </div>
@@ -174,9 +174,9 @@ export function renderL2() {
         </section>
 
         <!-- Тёмная секция услуг -->
-        <section class="services-dark">
-            <div class="services-dark__container">
-                <div class="services-dark__grid">
+        <section class="l2-services-dark">
+            <div class="l2-services-dark__container">
+                <div class="l2-services-dark__grid">
                     <article class="service-dark-card service-dark-card--level-1">
                         <div class="service-dark-card__image-wrapper">
                             <img class="service-dark-card__image" src="/img/L2img/service-audit.jpg" alt="Аудит игрового баланса">
@@ -185,7 +185,7 @@ export function renderL2() {
                             <h3 class="service-dark-card__title">Аудит и консультация по игровому балансу</h3>
                             <p class="service-dark-card__text">Услуга для команд, где гейм-дизайнеры или аналитики проекта проводят разбор баланса конкретных карт/составов и дают рекомендации.</p>
                             <p class="service-dark-card__price">От 2 850 руб.</p>
-                            <a href="#contacts" class="service-dark-card__button button button--outline-dark" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-dark-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                         </div>
                     </article>
 
@@ -197,7 +197,7 @@ export function renderL2() {
                             <h3 class="service-dark-card__title">Создание пользовательской карты</h3>
                             <p class="service-dark-card__text">Помощь нашим моддерам в интеграции их карты в игровые списки, техническая поддержка и консультации по использованию SDK.</p>
                             <p class="service-dark-card__price">От 4 400 руб.</p>
-                            <a href="#contacts" class="service-dark-card__button button button--outline-dark" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-dark-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                         </div>
                     </article>
 
@@ -209,7 +209,7 @@ export function renderL2() {
                             <h3 class="service-dark-card__title">Кастомный мерч и интеграция в игру</h3>
                             <p class="service-dark-card__text">Услуга для партнёров и крупных сообществ: создание эксклюзивного внутриигрового предмета (нашивка, скин) с вашей символикой.</p>
                             <p class="service-dark-card__price">От 3 290 руб.</p>
-                            <a href="#contacts" class="service-dark-card__button button button--outline-dark" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-dark-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                         </div>
                     </article>
 
@@ -221,7 +221,7 @@ export function renderL2() {
                             <h3 class="service-dark-card__title">Резервирование имени клана или тега</h3>
                             <p class="service-dark-card__text">Возможность зарезервировать уникальное название для вашего клана до момента запуска системы кланов в игре.</p>
                             <p class="service-dark-card__price">От 2 810 руб.</p>
-                            <a href="#contacts" class="service-dark-card__button button button--outline-dark" data-link>Заказать</a>
+                            <a href="#l2-contacts" class="service-dark-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                         </div>
                     </article>
                 </div>
@@ -237,7 +237,7 @@ export function renderL2() {
                         Мы предоставляем эксклюзивный профессиональный сервис, разработанный специально для контент-мейкеров, стримеров и создателей медиа. Данная услуга открывает прямой, безопасный доступ к нашему специальному API, который в реальном времени агрегирует и предоставляет расширенную, детализированную статистику по игрокам и матчам.
                     </p>
                     <p class="stats__price">От 4 080 руб.</p>
-                    <a href="#contacts" class="stats__button button button--dark" data-link>Заказать</a>
+                    <a href="#l2-contacts" class="stats__button l2-button l2-button--dark" data-link>Заказать</a>
                 </div>
                 <div class="stats__image-wrapper">
                     <img class="stats__image" src="/img/L2img/stats-monitor.jpg" alt="Монитор со статистикой">
@@ -246,29 +246,29 @@ export function renderL2() {
         </section>
 
         <!-- Нижние услуги -->
-        <section class="services-bottom">
-            <div class="services-bottom__container">
-                <div class="services-bottom__grid">
+        <section class="l2-services-bottom">
+            <div class="l2-services-bottom__container">
+                <div class="l2-services-bottom__grid">
                     <article class="service-bottom-card">
                         <img class="service-bottom-card__image" src="/img/L2img/service-meeting.jpg" alt="Организация встречи">
                         <h3 class="service-bottom-card__title">Организация встречи с разработчиками</h3>
                         <p class="service-bottom-card__text">Услуга для крупного сообщества или медиа: организация закрытой онлайн-встречи вашей аудитории с ведущими разработчиками игры</p>
                         <p class="service-bottom-card__price">От 4 400 руб.</p>
-                        <a href="#contacts" class="service-bottom-card__button button button--outline-dark" data-link>Заказать</a>
+                        <a href="#l2-contacts" class="service-bottom-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                     </article>
                     <article class="service-bottom-card">
                         <img class="service-bottom-card__image" src="/img/L2img/service-thanks.jpg" alt="Именная благодарность">
                         <h3 class="service-bottom-card__title">Услуга «Именная благодарность в титрах»</h3>
                         <p class="service-bottom-card__text">Размещение вашего ника или имени в специальном разделе благодарностей игры за особый вклад в развитие сообщества</p>
                         <p class="service-bottom-card__price">От 4 400 руб.</p>
-                        <a href="#contacts" class="service-bottom-card__button button button--outline-dark" data-link>Заказать</a>
+                        <a href="#l2-contacts" class="service-bottom-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                     </article>
                     <article class="service-bottom-card">
                         <img class="service-bottom-card__image" src="/img/L2img/service-server.jpg" alt="Аренда сервера">
                         <h3 class="service-bottom-card__title">Аренда сервера для матчмейкинга</h3>
                         <p class="service-bottom-card__text">Для киберспортивных организаций: развёртывание и поддержка выделенного игрового сервера с низким пингом в определённом регионе.</p>
                         <p class="service-bottom-card__price">От 3 400 руб.</p>
-                        <a href="#contacts" class="service-bottom-card__button button button--outline-dark" data-link>Заказать</a>
+                        <a href="#l2-contacts" class="service-bottom-card__button l2-button l2-button--outline-dark" data-link>Заказать</a>
                     </article>
                 </div>
             </div>
