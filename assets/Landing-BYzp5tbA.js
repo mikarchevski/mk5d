@@ -1,0 +1,133 @@
+function a(){return`
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header__container">
+                <a href="#/" class="header__logo-link" data-link>
+                    <span class="header__logo-text">MK</span>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#/" class="header__nav-link" data-link>Главная</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#/landing" class="header__nav-link header__nav-link--active" data-link>Портфолио</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#/contacts" class="header__nav-link" data-link>Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="portfolio">
+                <div class="portfolio__container">
+                    <h1 class="portfolio__title">Наши работы</h1>
+                    <p class="portfolio__subtitle">Лендинги, созданные с душой и вниманием к деталям</p>
+
+                    <div class="portfolio__grid">
+
+                        <!-- Карточка 1: Компьютерная помощь -->
+                        <a href="#/l1" class="portfolio-card" data-link>
+                            <div class="portfolio-card__inner">
+                                <div class="portfolio-card__front">
+                                    <img class="portfolio-card__image" src="/img/preview-computer-help.jpg" alt="Превью лендинга компьютерной помощи">
+                                    <div class="portfolio-card__overlay">
+                                        <span class="portfolio-card__hint">Нажмите, чтобы открыть</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__back">
+                                    <div class="portfolio-card__content">
+                                        <h3 class="portfolio-card__title">Компьютерная помощь</h3>
+                                        <p class="portfolio-card__description">
+                                            Лендинг для сервисного центра по ремонту компьютеров. 
+                                            Включает секции услуг, FAQ с аккордеоном, слайдер отзывов на Swiper.js, 
+                                            карту с контактами и адаптивную вёрстку под все устройства.
+                                        </p>
+                                        <ul class="portfolio-card__tags">
+                                            <li class="portfolio-card__tag">HTML5</li>
+                                            <li class="portfolio-card__tag">CSS3</li>
+                                            <li class="portfolio-card__tag">JavaScript</li>
+                                            <li class="portfolio-card__tag">Swiper</li>
+                                            <li class="portfolio-card__tag">BEM</li>
+                                        </ul>
+                                        <span class="portfolio-card__cta">Открыть лендинг →</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Карточка 2: Онлайн-игра -->
+                        <a href="#/l2" class="portfolio-card" data-link>
+                            <div class="portfolio-card__inner">
+                                <div class="portfolio-card__front">
+                                    <img class="portfolio-card__image" src="/img/preview-game.jpg" alt="Превью лендинга онлайн-игры">
+                                    <div class="portfolio-card__overlay">
+                                        <span class="portfolio-card__hint">Нажмите, чтобы открыть</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__back">
+                                    <div class="portfolio-card__content">
+                                        <h3 class="portfolio-card__title">Сайт онлайн-игры</h3>
+                                        <p class="portfolio-card__description">
+                                            Тёмный лендинг для компьютерной онлайн-игры в стиле Counter-Strike. 
+                                            Эффект "лесенки" в секции услуг, контрастные акценты, 
+                                            адаптивная вёрстка и анимации при наведении.
+                                        </p>
+                                        <ul class="portfolio-card__tags">
+                                            <li class="portfolio-card__tag">HTML5</li>
+                                            <li class="portfolio-card__tag">CSS3</li>
+                                            <li class="portfolio-card__tag">Flexbox</li>
+                                            <li class="portfolio-card__tag">BEM</li>
+                                            <li class="portfolio-card__tag">3D Transforms</li>
+                                        </ul>
+                                        <span class="portfolio-card__cta">Открыть лендинг →</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Карточка 3: Placeholder -->
+                        <div class="portfolio-card portfolio-card--coming-soon">
+                            <div class="portfolio-card__inner">
+                                <div class="portfolio-card__front">
+                                    <div class="portfolio-card__placeholder">
+                                        <span class="portfolio-card__placeholder-icon">+</span>
+                                        <span class="portfolio-card__placeholder-text">Новый проект</span>
+                                    </div>
+                                    <div class="portfolio-card__overlay">
+                                        <span class="portfolio-card__hint">Скоро здесь появится новый лендинг</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__back">
+                                    <div class="portfolio-card__content">
+                                        <h3 class="portfolio-card__title">Скоро</h3>
+                                        <p class="portfolio-card__description">
+                                            Третий проект находится в разработке. 
+                                            Следите за обновлениями — скоро здесь появится новый лендинг 
+                                            с уникальным дизайном и функциональностью.
+                                        </p>
+                                        <ul class="portfolio-card__tags">
+                                            <li class="portfolio-card__tag">В разработке</li>
+                                        </ul>
+                                        <span class="portfolio-card__cta portfolio-card__cta--disabled">Скоро будет доступно</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__text">© 2026 MK Studio. Все права защищены.</p>
+            </div>
+        </footer>
+    `}export{a as renderLanding};

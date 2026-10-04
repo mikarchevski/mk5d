@@ -9,7 +9,18 @@ const routes = {
     '/l1': () => import('./pages/L1.js'),
     '/l2': () => import('./pages/L2.js'),
 };
-
+function updateActiveLink(path) {
+    document.querySelectorAll('.header__nav-link').forEach(link => {
+        link.classList.remove('header__nav-link--active');
+        
+        const href = link.getAttribute('href');
+        if (href === '#/' && (path === '/' || path === '')) {
+            link.classList.add('header__nav-link--active');
+        } else if (href === `#${path}`) {
+            link.classList.add('header__nav-link--active');
+        }
+    });
+}
 export async function router() {
     const path = window.location.hash.slice(1) || '/';
     const app = document.getElementById('app');
