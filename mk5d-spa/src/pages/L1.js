@@ -5,7 +5,7 @@ export function renderL1() {
         <header class="header">
             <div class="header__container">
                 <a href="#/" class="header__logo-link" data-link>
-                    <img class="header__logo" src="/L1img/logo.png" alt="Логотип компании">
+                    <img class="header__logo" src="/img/L1img/logo.png" alt="Логотип компании">
                 </a>
 
                 <button class="header__menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
@@ -72,7 +72,7 @@ export function renderL1() {
                     </p>
                 </div>
                 <div class="about__image-wrapper">
-                    <img class="about__image" src="/L1img/about.jpg" alt="Мастер за работой">
+                    <img class="about__image" src="/img/L1img/about.jpg" alt="Мастер за работой">
                 </div>
             </div>
         </section>
@@ -83,7 +83,7 @@ export function renderL1() {
                 <h2 class="advantages__title section-title">Почему выбирают именно нас</h2>
                 <div class="advantages__grid">
                     <div class="advantage-card">
-                        <img class="advantage-card__icon" src="/L1img/icon-quality.svg" alt="Гарантия качества">
+                        <img class="advantage-card__icon" src="/img/L1img/icon-quality.svg" alt="Гарантия качества">
                         <h3 class="advantage-card__title">Гарантия качества</h3>
                         <p class="advantage-card__text">
                             Наша компания предоставляет услуги компьютерной помощи
@@ -91,7 +91,7 @@ export function renderL1() {
                         </p>
                     </div>
                     <div class="advantage-card">
-                        <img class="advantage-card__icon" src="/L1img/icon-price.svg" alt="Доступная стоимость">
+                        <img class="advantage-card__icon" src="/img/L1img/icon-price.svg" alt="Доступная стоимость">
                         <h3 class="advantage-card__title">Доступная стоимость</h3>
                         <p class="advantage-card__text">
                             Наша компания предоставляет услуги компьютерной помощи
@@ -99,7 +99,7 @@ export function renderL1() {
                         </p>
                     </div>
                     <div class="advantage-card">
-                        <img class="advantage-card__icon" src="/L1img/icon-services.svg" alt="Широкий спектр услуг">
+                        <img class="advantage-card__icon" src="/img/L1img/icon-services.svg" alt="Широкий спектр услуг">
                         <h3 class="advantage-card__title">Широкий спектр услуг</h3>
                         <p class="advantage-card__text">
                             Наша компания предоставляет широкий спектр услуг,
@@ -124,7 +124,7 @@ export function renderL1() {
                     <a href="#contacts" class="diagnostics__cta-button button button--primary">Оставить заявку</a>
                 </div>
                 <div class="diagnostics__image-wrapper">
-                    <img class="diagnostics__image" src="/L1img/diagnostics.jpg" alt="Диагностика ноутбука">
+                    <img class="diagnostics__image" src="/img/L1img/diagnostics.jpg" alt="Диагностика ноутбука">
                 </div>
             </div>
         </section>
@@ -138,7 +138,7 @@ export function renderL1() {
                 </p>
                 <div class="services__grid">
                     <article class="service-card">
-                        <img class="service-card__image" src="/L1img/service-os.jpg" alt="Установка ОС">
+                        <img class="service-card__image" src="/img/L1img/service-os.jpg" alt="Установка ОС">
                         <h3 class="service-card__title">Установка ОС</h3>
                         <p class="service-card__text">
                             Собирательное название различных сервис-центров, которые
@@ -148,7 +148,7 @@ export function renderL1() {
                         <a href="#contacts" class="service-card__button button button--primary" data-link>Выбрать</a>
                     </article>
                     <article class="service-card">
-                        <img class="service-card__image" src="/L1img/service-laptop.jpg" alt="Ремонт ноутбуков">
+                        <img class="service-card__image" src="/img/L1img/service-laptop.jpg" alt="Ремонт ноутбуков">
                         <h3 class="service-card__title">Ремонт ноутбуков</h3>
                         <p class="service-card__text">
                             Собирательное название различных сервис-центров, которые
@@ -158,7 +158,7 @@ export function renderL1() {
                         <a href="#contacts" class="service-card__button button button--primary" data-link>Выбрать</a>
                     </article>
                     <article class="service-card">
-                        <img class="service-card__image" src="/L1img/service-network.jpg" alt="Интернет и сети">
+                        <img class="service-card__image" src="/img/L1img/service-network.jpg" alt="Интернет и сети">
                         <h3 class="service-card__title">Интернет и сети</h3>
                         <p class="service-card__text">
                             Собирательное название различных сервис-центров, которые
@@ -168,7 +168,7 @@ export function renderL1() {
                         <a href="#contacts" class="service-card__button button button--primary" data-link>Выбрать</a>
                     </article>
                     <article class="service-card">
-                        <img class="service-card__image" src="/L1img/service-data.jpg" alt="Восстановление данных">
+                        <img class="service-card__image" src="/img/L1img/service-data.jpg" alt="Восстановление данных">
                         <h3 class="service-card__title">Восстановление данных</h3>
                         <p class="service-card__text">
                             Собирательное название различных сервис-центров, которые
@@ -178,7 +178,7 @@ export function renderL1() {
                         <a href="#contacts" class="service-card__button button button--primary" data-link>Выбрать</a>
                     </article>
                     <article class="service-card">
-                        <img class="service-card__image" src="/L1img/service-upgrade.jpg" alt="Апгрейд компьютера">
+                        <img class="service-card__image" src="/img/L1img/service-upgrade.jpg" alt="Апгрейд компьютера">
                         <h3 class="service-card__title">Апгрейд компьютера</h3>
                         <p class="service-card__text">
                             Собирательное название различных сервис-центров, которые
@@ -188,7 +188,7 @@ export function renderL1() {
                         <a href="#contacts" class="service-card__button button button--primary" data-link>Выбрать</a>
                     </article>
                     <article class="service-card">
-                        <img class="service-card__image" src="/L1img/service-repair.jpg" alt="Ремонт компьютеров">
+                        <img class="service-card__image" src="/img/L1img/service-repair.jpg" alt="Ремонт компьютеров">
                         <h3 class="service-card__title">Ремонт компьютеров</h3>
                         <p class="service-card__text">
                             Собирательное название различных сервис-центров, которые
@@ -222,19 +222,19 @@ export function renderL1() {
                 <h2 class="brands__title section-title">Ремонтируем компьютеры разных производителей</h2>
                 <div class="brands__grid">
                     <div class="brand-card">
-                        <img class="brand-card__logo" src="/L1img/brand-1.png" alt="Logoname">
+                        <img class="brand-card__logo" src="/img/L1img/brand-1.png" alt="Logoname">
                     </div>
                     <div class="brand-card">
-                        <img class="brand-card__logo" src="/L1img/brand-2.png" alt="TechLogo">
+                        <img class="brand-card__logo" src="/img/L1img/brand-2.png" alt="TechLogo">
                     </div>
                     <div class="brand-card">
-                        <img class="brand-card__logo" src="/L1img/brand-3.png" alt="Brand 3">
+                        <img class="brand-card__logo" src="/img/L1img/brand-3.png" alt="Brand 3">
                     </div>
                     <div class="brand-card">
-                        <img class="brand-card__logo" src="/L1img/brand-4.png" alt="Ipsum">
+                        <img class="brand-card__logo" src="/img/L1img/brand-4.png" alt="Ipsum">
                     </div>
                     <div class="brand-card">
-                        <img class="brand-card__logo" src="/L1img/brand-5.png" alt="Lorem">
+                        <img class="brand-card__logo" src="/img/L1img/brand-5.png" alt="Lorem">
                     </div>
                 </div>
             </div>
@@ -324,7 +324,7 @@ export function renderL1() {
                     <div class="swiper-wrapper">
                         <div class="swiper-slide reviews__slide">
                             <div class="review-card">
-                                <img class="review-card__avatar" src="/L1img/avatar-1.jpg" alt="Ирина Савинская">
+                                <img class="review-card__avatar" src="/img/L1img/avatar-1.jpg" alt="Ирина Савинская">
                                 <h3 class="review-card__name">Ирина Савинская</h3>
                                 <p class="review-card__text">
                                     Все что указано в договоре, было выполнено в срок, поэтому могу
@@ -336,7 +336,7 @@ export function renderL1() {
                         </div>
                         <div class="swiper-slide reviews__slide">
                             <div class="review-card">
-                                <img class="review-card__avatar" src="/L1img/avatar-2.jpg" alt="Александр Александров">
+                                <img class="review-card__avatar" src="/img/L1img/avatar-2.jpg" alt="Александр Александров">
                                 <h3 class="review-card__name">Александр Александров</h3>
                                 <p class="review-card__text">
                                     Обратился с проблемой перегрева ноутбука. Мастер приехал в течение часа,
@@ -378,7 +378,7 @@ export function renderL1() {
             <div class="footer__container">
                 <div class="footer__column">
                     <a href="#/" class="footer__logo-link" data-link>
-                        <img class="footer__logo" src="/L1img/logo.png" alt="Логотип">
+                        <img class="footer__logo" src="/img/L1img/logo.png" alt="Логотип">
                     </a>
                 </div>
                 <div class="footer__column footer__column--info">
