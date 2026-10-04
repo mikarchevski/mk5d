@@ -1,7 +1,4 @@
-import '../assets/l1.css'; 
-export function renderL1() {
-    return `
-    <div class="page-l1">
+function a(){return`
         <!-- Шапка -->
         <header class="header">
             <div class="header__container">
@@ -398,6 +395,4 @@ export function renderL1() {
                 </div>
             </div>
         </footer>
-    </div>
-    `;
-}
+    `}export{a as renderL1};

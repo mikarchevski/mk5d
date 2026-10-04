@@ -909,6 +909,7 @@ button {
     background-color: #1a3a5c;
     color: #ffffff;
     padding: 40px 24px 0;
+    height: auto;
 }
 
 .footer__container {

@@ -56,10 +56,13 @@ export async function router() {
         app.innerHTML = htmlString;
         
         // 6. Инициализируем интерактив
-        initMobileMenu();
-        initSlider();
-        initFaq();
         
+        requestAnimationFrame(() => {
+            initMobileMenu();
+            initSlider();
+            initFaq();
+            updateActiveLink(path); // <-- Добавили вызов, который у вас был, но не использовался
+        });
         // 7. Вешаем обработчики и скроллим вверх
         attachLinkListeners();
         window.scrollTo(0, 0);
@@ -93,4 +96,12 @@ function attachLinkListeners() {
     });
 }
 
-window.addEventListener('popstate', router);
+window.addEventListener('popstate', () => {
+    // Очищаем app полностью
+    const app = document.getElementById('app');
+    if (app) {
+        app.innerHTML = '';
+        // Небольшая задержка перед рендером
+        setTimeout(() => router(), 0);
+    }
+});

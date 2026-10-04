@@ -1,8 +1,4 @@
-// Динамический импорт стилей: Vite загрузит l2.css только при открытии этой страницы
-import '../assets/l2.css';
-
-export function renderL2() {
-    return `
+function a(){return`
     <div class="page-l2">
         <!-- Шапка -->
         <header class="header">
@@ -289,5 +285,4 @@ export function renderL2() {
             </div>
         </section>
     </div>
-    `;
-}
+    `}export{a as renderL2};
