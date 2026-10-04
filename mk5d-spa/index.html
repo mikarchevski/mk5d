@@ -7,39 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <!-- Хедер теперь статичный, вне зоны роутера -->
-    <header class="header">
-        <div class="header__container">
-            <a href="#/" class="header__logo-link" data-link>
-                <span class="header__logo-text">MK</span>
-            </a>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="#/" class="header__nav-link" data-link>Главная</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#/landing" class="header__nav-link" data-link>Портфолио</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#/contacts" class="header__nav-link" data-link>Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Только контент меняется здесь -->
+    <!-- Только контейнер для роутера. Шапка и футер будут добавляться через JS -->
     <div id="app"></div>
     
-    <!-- Футер тоже можно сделать статичным -->
-    <footer class="footer">
-        <div class="footer__container">
-            <p class="footer__text">© 2026 MK Studio. Все права защищены.</p>
-        </div>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="../src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
 </body>
 </html>
