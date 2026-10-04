@@ -12,7 +12,7 @@ export function renderL2() {
                     <span></span>
                 </button>
                 <a href="#/" class="header__logo-link" data-link>
-                    <img class="header__logo" src="/img/logo-gamepad.png" alt="Логотип">
+                    <img class="header__logo" src="/L2img/logo-gamepad.png" alt="Логотип">
                 </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -47,7 +47,7 @@ export function renderL2() {
                     <a href="#services" class="hero__button button button--primary" data-link>Подробнее</a>
                 </div>
                 <div class="hero__image-wrapper">
-                    <img class="hero__image" src="/img/hero-game.jpg" alt="Игровой скриншот">
+                    <img class="hero__image" src="/L2img/hero-game.jpg" alt="Игровой скриншот">
                 </div>
             </div>
         </section>
@@ -57,13 +57,13 @@ export function renderL2() {
             <div class="about__container">
                 <div class="about__images">
                     <div class="about__image-wrapper about__image-wrapper--large">
-                        <img class="about__image" src="/img/about-team.jpg" alt="Команда разработчиков">
+                        <img class="about__image" src="/L2img/about-team.jpg" alt="Команда разработчиков">
                     </div>
                     <div class="about__image-wrapper about__image-wrapper--small">
-                        <img class="about__image" src="/img/about-gamepad.jpg" alt="Геймпад">
+                        <img class="about__image" src="/L2img/about-gamepad.jpg" alt="Геймпад">
                     </div>
                     <div class="about__image-wrapper about__image-wrapper--small">
-                        <img class="about__image" src="/img/about-gamer.jpg" alt="Игрок">
+                        <img class="about__image" src="/L2img/about-gamer.jpg" alt="Игрок">
                     </div>
                 </div>
                 <div class="about__content">
@@ -124,7 +124,7 @@ export function renderL2() {
                     </ul>
                 </div>
                 <div class="features__image-wrapper">
-                    <img class="features__image" src="/img/features-gamer.jpg" alt="Игрок за компьютером">
+                    <img class="features__image" src="/L2img/features-gamer.jpg" alt="Игрок за компьютером">
                 </div>
                 <div class="features__accent"></div>
             </div>
@@ -137,7 +137,7 @@ export function renderL2() {
                 <div class="services__list">
                     <article class="service-card">
                         <div class="service-card__image-wrapper">
-                            <img class="service-card__image" src="/img/service-restore.jpg" alt="Восстановление аккаунта">
+                            <img class="service-card__image" src="/L2img/service-restore.jpg" alt="Восстановление аккаунта">
                         </div>
                         <div class="service-card__content">
                             <h3 class="service-card__title">Восстановление аккаунта и предметов</h3>
@@ -148,7 +148,7 @@ export function renderL2() {
                     </article>
                     <article class="service-card service-card--reverse">
                         <div class="service-card__image-wrapper">
-                            <img class="service-card__image" src="/img/service-support.jpg" alt="Техническая поддержка">
+                            <img class="service-card__image" src="/L2img/service-support.jpg" alt="Техническая поддержка">
                         </div>
                         <div class="service-card__content">
                             <h3 class="service-card__title">Приоритетная очередь в технической поддержке</h3>
@@ -159,7 +159,7 @@ export function renderL2() {
                     </article>
                     <article class="service-card">
                         <div class="service-card__image-wrapper">
-                            <img class="service-card__image" src="/img/service-tournament.jpg" alt="Приватный турнир">
+                            <img class="service-card__image" src="/L2img/service-tournament.jpg" alt="Приватный турнир">
                         </div>
                         <div class="service-card__content">
                             <h3 class="service-card__title">Проведение приватного турнира</h3>
@@ -178,7 +178,7 @@ export function renderL2() {
                 <div class="services-dark__grid">
                     <article class="service-dark-card service-dark-card--level-1">
                         <div class="service-dark-card__image-wrapper">
-                            <img class="service-dark-card__image" src="/img/service-audit.jpg" alt="Аудит игрового баланса">
+                            <img class="service-dark-card__image" src="/L2img/service-audit.jpg" alt="Аудит игрового баланса">
                         </div>
                         <div class="service-dark-card__content">
                             <h3 class="service-dark-card__title">Аудит и консультация по игровому балансу</h3>
@@ -190,7 +190,7 @@ export function renderL2() {
 
                     <article class="service-dark-card service-dark-card--level-2">
                         <div class="service-dark-card__image-wrapper">
-                            <img class="service-dark-card__image" src="/img/service-map.jpg" alt="Создание пользовательской карты">
+                            <img class="service-dark-card__image" src="/L2img/service-map.jpg" alt="Создание пользовательской карты">
                         </div>
                         <div class="service-dark-card__content">
                             <h3 class="service-dark-card__title">Создание пользовательской карты</h3>
@@ -202,7 +202,7 @@ export function renderL2() {
 
                     <article class="service-dark-card service-dark-card--level-3">
                         <div class="service-dark-card__image-wrapper">
-                            <img class="service-dark-card__image" src="/img/service-merch.jpg" alt="Кастомный мерч">
+                            <img class="service-dark-card__image" src="/L2img/service-merch.jpg" alt="Кастомный мерч">
                         </div>
                         <div class="service-dark-card__content">
                             <h3 class="service-dark-card__title">Кастомный мерч и интеграция в игру</h3>
@@ -214,7 +214,7 @@ export function renderL2() {
 
                     <article class="service-dark-card service-dark-card--level-4">
                         <div class="service-dark-card__image-wrapper">
-                            <img class="service-dark-card__image" src="/img/service-clan.jpg" alt="Резервирование имени клана">
+                            <img class="service-dark-card__image" src="/L2img/service-clan.jpg" alt="Резервирование имени клана">
                         </div>
                         <div class="service-dark-card__content">
                             <h3 class="service-dark-card__title">Резервирование имени клана или тега</h3>
@@ -239,7 +239,7 @@ export function renderL2() {
                     <a href="#contacts" class="stats__button button button--dark" data-link>Заказать</a>
                 </div>
                 <div class="stats__image-wrapper">
-                    <img class="stats__image" src="/img/stats-monitor.jpg" alt="Монитор со статистикой">
+                    <img class="stats__image" src="/L2img/stats-monitor.jpg" alt="Монитор со статистикой">
                 </div>
             </div>
         </section>
@@ -249,21 +249,21 @@ export function renderL2() {
             <div class="services-bottom__container">
                 <div class="services-bottom__grid">
                     <article class="service-bottom-card">
-                        <img class="service-bottom-card__image" src="/img/service-meeting.jpg" alt="Организация встречи">
+                        <img class="service-bottom-card__image" src="/L2img/service-meeting.jpg" alt="Организация встречи">
                         <h3 class="service-bottom-card__title">Организация встречи с разработчиками</h3>
                         <p class="service-bottom-card__text">Услуга для крупного сообщества или медиа: организация закрытой онлайн-встречи вашей аудитории с ведущими разработчиками игры</p>
                         <p class="service-bottom-card__price">От 4 400 руб.</p>
                         <a href="#contacts" class="service-bottom-card__button button button--outline-dark" data-link>Заказать</a>
                     </article>
                     <article class="service-bottom-card">
-                        <img class="service-bottom-card__image" src="/img/service-thanks.jpg" alt="Именная благодарность">
+                        <img class="service-bottom-card__image" src="/L2img/service-thanks.jpg" alt="Именная благодарность">
                         <h3 class="service-bottom-card__title">Услуга «Именная благодарность в титрах»</h3>
                         <p class="service-bottom-card__text">Размещение вашего ника или имени в специальном разделе благодарностей игры за особый вклад в развитие сообщества</p>
                         <p class="service-bottom-card__price">От 4 400 руб.</p>
                         <a href="#contacts" class="service-bottom-card__button button button--outline-dark" data-link>Заказать</a>
                     </article>
                     <article class="service-bottom-card">
-                        <img class="service-bottom-card__image" src="/img/service-server.jpg" alt="Аренда сервера">
+                        <img class="service-bottom-card__image" src="/L2img/service-server.jpg" alt="Аренда сервера">
                         <h3 class="service-bottom-card__title">Аренда сервера для матчмейкинга</h3>
                         <p class="service-bottom-card__text">Для киберспортивных организаций: развёртывание и поддержка выделенного игрового сервера с низким пингом в определённом регионе.</p>
                         <p class="service-bottom-card__price">От 3 400 руб.</p>
@@ -283,7 +283,7 @@ export function renderL2() {
                     </p>
                 </div>
                 <div class="cta__image-wrapper">
-                    <img class="cta__image" src="/img/cta-helicopter.jpg" alt="Вертолёт в игре">
+                    <img class="cta__image" src="/L2img/cta-helicopter.jpg" alt="Вертолёт в игре">
                 </div>
             </div>
         </section>
