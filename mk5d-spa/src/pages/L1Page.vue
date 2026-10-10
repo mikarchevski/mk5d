@@ -149,29 +149,41 @@
     </section>
 
     <!-- Отзывы -->
-    <section class="l1-reviews" id="l1-reviews">
-      <div class="l1-reviews__container">
-        <h2 class="l1-reviews__title l1-section-title">Отзывы наших клиентов</h2>
-        <p class="l1-reviews__subtitle">Что говорят о нашей компании довольные клиенты</p>
+    <!-- Отзывы -->
+<section class="l1-reviews" id="l1-reviews">
+  <div class="l1-reviews__container">
+    <h2 class="l1-reviews__title l1-section-title">Отзывы наших клиентов</h2>
+    <p class="l1-reviews__subtitle">Что говорят о нашей компании довольные клиенты</p>
 
-        <div class="swiper l1-reviews__slider">
-          <div class="swiper-wrapper">
-            <div v-for="review in reviews" :key="review.id" class="swiper-slide">
-              <div class="l1-review-card">
-                <img class="l1-review-card__avatar" :src="review.avatar" :alt="review.name">
-                <h3 class="l1-review-card__name">{{ review.name }}</h3>
-                <p class="l1-review-card__text">{{ review.text }}</p>
-              </div>
-            </div>
+    <div class="swiper l1-reviews__slider" ref="swiperContainer">
+      <div class="swiper-wrapper">
+        <div v-for="review in reviews" :key="review.id" class="swiper-slide l1-reviews__slide">
+          <div class="l1-review-card">
+            <img class="l1-review-card__avatar" :src="review.avatar" :alt="review.name">
+            <h3 class="l1-review-card__name">{{ review.name }}</h3>
+            <p class="l1-review-card__text">{{ review.text }}</p>
           </div>
-          <div class="l1-reviews__navigation">
-            <button class="swiper-button-prev l1-reviews__arrow" aria-label="Предыдущий отзыв"></button>
-            <button class="swiper-button-next l1-reviews__arrow" aria-label="Следующий отзыв"></button>
-          </div>
-          <div class="swiper-pagination l1-reviews__pagination"></div>
         </div>
       </div>
-    </section>
+      
+      <div class="l1-reviews__navigation">
+        <button 
+            class="swiper-button-prev l1-reviews__arrow" 
+            type="button"
+            aria-label="Предыдущий отзыв"
+            @click="swiperInstance?.slidePrev()"
+        ></button>
+        <button 
+            class="swiper-button-next l1-reviews__arrow" 
+            type="button"
+            aria-label="Следующий отзыв"
+            @click="swiperInstance?.slideNext()"
+        ></button>
+      </div>
+      <div class="swiper-pagination l1-reviews__pagination"></div>
+    </div>
+  </div>
+</section>
 
     <!-- Контакты -->
     <section class="l1-contacts" id="l1-contacts">
@@ -195,10 +207,17 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import AppHeader from '../components/AppHeader.vue';
 import AppFooter from '../components/AppFooter.vue';
 import ServiceCard from '../components/ServiceCard.vue';
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+// Импортируем стили Swiper
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // Преимущества (v-for)
 const advantages = ref([
@@ -245,9 +264,29 @@ const reviews = ref([
   { id: 2, name: 'Александр Александров', avatar: '/img/L1img/avatar-2.jpg', text: 'Обратился с проблемой перегрева ноутбука. Мастер приехал в течение часа, всё почистил, заменил термопасту. Теперь ноутбук работает как новый, не шумит и не греется. Рекомендую этот сервис!' }
 ]);
 
-// Инициализация Swiper после монтирования компонента
+const swiperContainer = ref(null);
+let swiperInstance = null;
+
 onMounted(() => {
-  // Если у тебя подключен Swiper через CDN, он инициализируется автоматически
-  // Если нужен JS-Swiper, можно импортировать его здесь
+  // Инициализируем Swiper после монтирования компонента
+  if (swiperContainer.value) {
+    swiperInstance = new Swiper(swiperContainer.value, {
+      modules: [Navigation, Pagination],
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }
+});
+
+onUnmounted(() => {
+  // Уничтожаем Swiper при размонтировании компонента
+  if (swiperInstance) {
+    swiperInstance.destroy();
+  }
 });
 </script>

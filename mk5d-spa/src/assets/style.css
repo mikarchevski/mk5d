@@ -1059,12 +1059,12 @@ h1 {
   margin-bottom: 48px;
 }
 .l1-reviews__slider {
-  padding: 0 60px 50px;
+  padding: 0 60px 50px !important;
 }
 .l1-reviews__slide {
-  display: flex;
-  justify-content: center;
-  height: auto;
+  display: flex !important;
+  justify-content: center !important;
+  height: auto !important;
 }
 .l1-review-card {
   display: flex;

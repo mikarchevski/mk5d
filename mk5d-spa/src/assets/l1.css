@@ -380,11 +380,11 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .l1-reviews__arrow:hover::after { color: #333333; }
 
 .l1-reviews__pagination { bottom: 0 !important; }
-.l1-reviews__pagination .swiper-pagination-bullet {
+.l1-reviews__pagination .l1-swiper-pagination-bullet {
     width: 14px; height: 14px; background: transparent; border: 2px solid #cccccc;
     opacity: 1; transition: all 0.3s ease; margin: 0 6px !important;
 }
-.l1-reviews__pagination .swiper-pagination-bullet-active { background-color: #333333; border-color: #333333; }
+.l1-reviews__pagination .l1-swiper-pagination-bullet-active { background-color: #333333; border-color: #333333; }
 
 /* ========================================
    Блок: l1-contacts
