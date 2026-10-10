@@ -4,7 +4,7 @@ export function renderL1() {
         <!-- Шапка -->
         <header class="l1-header">
             <div class="l1-header__container">
-                <a href="#/" class="l1-header__logo-link" data-link>
+                <a href="#/l1" class="l1-header__logo-link" data-link>
                     <img class="l1-header__logo" src="/img/L1img/logo.png" alt="Логотип компании">
                 </a>
 
@@ -16,23 +16,23 @@ export function renderL1() {
                 <nav class="l1-header__nav">
                     <ul class="l1-header__nav-list">
                         <li class="l1-header__nav-item">
-                            <a href="#l1-about" class="l1-header__nav-link">О компании</a>
+                            <a href="#/l1" class="l1-header__nav-link">О компании</a>
                         </li>
                         <li class="l1-header__nav-item">
-                            <a href="#why-us" class="l1-header__nav-link">Почему мы</a>
+                            <a href="#/l1" class="l1-header__nav-link">Почему мы</a>
                         </li>
                         <li class="l1-header__nav-item">
-                            <a href="#l1-services" class="l1-header__nav-link">Услуги</a>
+                            <a href="#/l1" class="l1-header__nav-link">Услуги</a>
                         </li>
                         <li class="l1-header__nav-item">
-                            <a href="#l1-reviews" class="l1-header__nav-link">Отзывы</a>
+                            <a href="#/l1" class="l1-header__nav-link">Отзывы</a>
                         </li>
                         <li class="l1-header__nav-item">
-                            <a href="#l1-contacts" class="l1-header__nav-link">Контакты</a>
+                            <a href="#/l1" class="l1-header__nav-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="tel:88003332233" class="l1-header__phone">
+                <a href="#/l1" class="l1-header__phone">
                     <svg class="l1-header__phone-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
@@ -51,7 +51,7 @@ export function renderL1() {
                         Добро пожаловать! Мы рады приветствовать вас на сайте компании,
                         которая помогает исправить неполадки компьютера
                     </p>
-                    <a href="#l1-contacts" class="l1-hero__cta-button l1-button l1-button--primary">Оставить заявку</a>
+                    <a href="#/l1" class="l1-hero__cta-button l1-button l1-button--primary">Оставить заявку</a>
                 </div>
             </div>
         </section>
@@ -72,7 +72,7 @@ export function renderL1() {
                     </p>
                 </div>
                 <div class="l1-about__image-wrapper">
-                    <img class="l1-about__image" src="/img/L1img/l1-about.jpg" alt="Мастер за работой">
+                    <img class="l1-about__image" src="/img/L1img/about.jpg" alt="Мастер за работой">
                 </div>
             </div>
         </section>
@@ -121,10 +121,10 @@ export function renderL1() {
                         диагностики. Для этого оставьте заявку на сайте или позвоните
                         по номеру +7 800 333 22 33
                     </p>
-                    <a href="#l1-contacts" class="l1-diagnostics__cta-button l1-button l1-button--primary">Оставить заявку</a>
+                    <a href="#/l1" class="l1-diagnostics__cta-button l1-button l1-button--primary">Оставить заявку</a>
                 </div>
                 <div class="l1-diagnostics__image-wrapper">
-                    <img class="l1-diagnostics__image" src="/img/L1img/l1-diagnostics.jpg" alt="Диагностика ноутбука">
+                    <img class="l1-diagnostics__image" src="/img/L1img/diagnostics.jpg" alt="Диагностика ноутбука">
                 </div>
             </div>
         </section>
@@ -145,7 +145,7 @@ export function renderL1() {
                             предоставляют услуги ремонта и настройки компьютеров
                         </p>
                         <span class="l1-service-card__price">от 500 руб.</span>
-                        <a href="#l1-contacts" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
+                        <a href="#/l1" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
                     </article>
                     <article class="l1-service-card">
                         <img class="l1-service-card__image" src="/img/L1img/service-laptop.jpg" alt="Ремонт ноутбуков">
@@ -155,7 +155,7 @@ export function renderL1() {
                             предоставляют услуги ремонта и настройки компьютеров
                         </p>
                         <span class="l1-service-card__price">от 550 руб.</span>
-                        <a href="#l1-contacts" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
+                        <a href="#/l1" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
                     </article>
                     <article class="l1-service-card">
                         <img class="l1-service-card__image" src="/img/L1img/service-network.jpg" alt="Интернет и сети">
@@ -165,7 +165,7 @@ export function renderL1() {
                             предоставляют услуги ремонта и настройки компьютеров
                         </p>
                         <span class="l1-service-card__price">от 600 руб.</span>
-                        <a href="#l1-contacts" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
+                        <a href="#/l1" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
                     </article>
                     <article class="l1-service-card">
                         <img class="l1-service-card__image" src="/img/L1img/service-data.jpg" alt="Восстановление данных">
@@ -175,7 +175,7 @@ export function renderL1() {
                             предоставляют услуги ремонта и настройки компьютеров
                         </p>
                         <span class="l1-service-card__price">от 650 руб.</span>
-                        <a href="#l1-contacts" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
+                        <a href="#/l1" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
                     </article>
                     <article class="l1-service-card">
                         <img class="l1-service-card__image" src="/img/L1img/service-upgrade.jpg" alt="Апгрейд компьютера">
@@ -185,7 +185,7 @@ export function renderL1() {
                             предоставляют услуги ремонта и настройки компьютеров
                         </p>
                         <span class="l1-service-card__price">от 700 руб.</span>
-                        <a href="#l1-contacts" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
+                        <a href="#/l1" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
                     </article>
                     <article class="l1-service-card">
                         <img class="l1-service-card__image" src="/img/L1img/service-repair.jpg" alt="Ремонт компьютеров">
@@ -195,7 +195,7 @@ export function renderL1() {
                             предоставляют услуги ремонта и настройки компьютеров
                         </p>
                         <span class="l1-service-card__price">от 750 руб.</span>
-                        <a href="#l1-contacts" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
+                        <a href="#/l1" class="l1-service-card__button l1-button l1-button--primary">Выбрать</a>
                     </article>
                 </div>
             </div>
@@ -211,7 +211,7 @@ export function renderL1() {
                         Закажите ремонт в дневное время, и положите в копилку 20%
                         от стоимости ремонта. Специальное предложение ограничено!
                     </p>
-                    <a href="#l1-contacts" class="l1-promo__cta-button l1-button l1-button--primary">Узнать подробнее</a>
+                    <a href="#/l1" class="l1-promo__cta-button l1-button l1-button--primary">Узнать подробнее</a>
                 </div>
             </div>
         </section>
@@ -377,14 +377,14 @@ export function renderL1() {
         <footer class="l1-footer">
             <div class="l1-footer__container">
                 <div class="l1-footer__column">
-                    <a href="#/" class="l1-footer__logo-link" data-link>
+                    <a href="#/l1" class="l1-footer__logo-link" data-link>
                         <img class="l1-footer__logo" src="/img/L1img/logo.png" alt="Логотип">
                     </a>
                 </div>
                 <div class="l1-footer__column l1-footer__column--info">
                     <p class="l1-footer__company">ООО «СтройТрейд», 123456, г.Москва, ул.&nbsp;Центральная&nbsp;1, офис&nbsp;1</p>
                     <p class="l1-footer__inn">ИНН 1234567890 ОГРН 123456789012</p>
-                    <a href="#" class="l1-footer__privacy-link">Политика конфиденциальности</a>
+                    <a href="#/l1" class="l1-footer__privacy-link">Политика конфиденциальности</a>
                 </div>
                 <div class="l1-footer__column l1-footer__column--phone">
                     <a href="tel:88003332233" class="l1-footer__phone">

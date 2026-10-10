@@ -2,8 +2,8 @@ import { renderMainLayout } from '../layouts/MainLayout.js';
 
 export function renderHome() {
     const content = `
-        <h1>Добро пожаловать в MK5D</h1>
-        <p class="subtitle">Ваша персональная панель управления</p>
+        <h1>MK5D</h1>
+        <p class="subtitle">Проекты:</p>
         <div class="cards">
             <a href="https://disk.mk5d.ru" class="card">
                 <div class="card-icon">☁️</div>
