@@ -3,12 +3,28 @@
     <div class="container">
       <h1>MK5D</h1>
       <p class="subtitle">Проекты:</p>
-      
+
       <div class="cards">
-        <a href="https://disk.mk5d.ru" class="card" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://disk.mk5d.ru"
+          class="card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div class="card-icon">☁️</div>
           <div class="card-title">Облачный диск</div>
           <div class="card-desc">Filebrowser — файлы, загрузка, скачивание</div>
+        </a>
+
+        <a
+          href="https://kids-informatics.mk5d.ru"
+          class="card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card-icon">💻</div>
+          <div class="card-title">Информатика для детей</div>
+          <div class="card-desc">Развивающий сайт для детей</div>
         </a>
 
         <router-link to="/landing" class="card">
